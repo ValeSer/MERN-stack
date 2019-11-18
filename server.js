@@ -5,6 +5,12 @@ const mongoose = require('mongoose');
 // it will allow us to take requests and get data from the body
 const bodyParser = require('body-parser');
 
+const items = require('./routes/api/items');
+
+//Use Routes
+//anything that goes to api/items should refer to the items variable
+app.use('/api/items', items);
+
 //initialise express in a variable
 const app = express();
 
