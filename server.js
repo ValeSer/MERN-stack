@@ -7,10 +7,6 @@ const bodyParser = require('body-parser');
 
 const items = require('./routes/api/items');
 
-//Use Routes
-//anything that goes to api/items should refer to the items variable
-app.use('/api/items', items);
-
 //initialise express in a variable
 const app = express();
 
@@ -25,6 +21,10 @@ mongoose
   .connect(db)
   .then(() => console.log('MongoDB Connected...'))
   .catch(err => console.log(err));
+
+//Use Routes
+//anything that goes to api/items should refer to the items variable
+app.use('/api/items', items);
 
 const port = process.env.PORT || 5000;
 
