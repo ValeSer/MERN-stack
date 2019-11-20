@@ -38,3 +38,8 @@ Getting to know how MERN works:  MongoDB, Express, React, Node combined
 	  const port = process.env.PORT || 5000;
 
 	  app.listen(port, () => console.log(`Server started on port ${port}`));
+
+  # API
+   - In a folder called Models Create the Schema for our Items
+   - Create REST API for our Items: GET, POST, DELETE routes
+   - use Postman to test API
