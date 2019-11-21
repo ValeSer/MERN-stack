@@ -55,3 +55,5 @@ Getting to know how MERN works:  MongoDB, Express, React, Node combined
       - "client": "npm start --prefix client",
       - "dev": "concurrently \"npm run server\" \"npm run client\""
     - npm run dev
+
+  # SETUP Bootstrap, Reactstrap, Uuid
