@@ -2,7 +2,7 @@
 
 Getting to know how MERN works:  MongoDB, Express, React, Node combined
 
-1) Start from backend by building Express API using mongoose to interact with MongoDB
+1) Start from BACKEND by building Express API using mongoose to interact with MongoDB
 
   # SET UP ENVIRONMENT
   - Create a repository on Github
@@ -43,3 +43,15 @@ Getting to know how MERN works:  MongoDB, Express, React, Node combined
    - In a folder called Models Create the Schema for our Items
    - Create REST API for our Items: GET, POST, DELETE routes
    - use Postman to test API
+
+
+ 2)FRONTEND
+  # SETUP CLIENT and HAVE BACKEND AND FRONTEND RUNNING concurrently
+    - npm install -g create-react-app
+    - create-react-app
+    - npm start
+    - Add scripts in our server's package.json:
+      - "client-install": "npm install --prefix client",
+      - "client": "npm start --prefix client",
+      - "dev": "concurrently \"npm run server\" \"npm run client\""
+    - npm run dev
