@@ -10,7 +10,6 @@ class ShoppingList extends Component {
       { id: uuid(), name: 'Milk'},
       { id: uuid(), name: 'Steak'},
       { id: uuid(), name: 'Water'}
-
     ]
   }
   render() {
