@@ -8,11 +8,11 @@ import PropTypes from 'prop-types';
 
 class ShoppingList extends Component {
   componentDidMount() {
-    this.prop.getItems();
+    this.props.getItems();
   }
 
   render() {
-    const { items } = this.state;
+    const { items } = this.props.item;
     return(
       <Container>
        <Button
