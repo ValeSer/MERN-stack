@@ -7,6 +7,9 @@ import { getItems } from '../actions/itemActions';
 import PropTypes from 'prop-types';
 
 class ShoppingList extends Component {
+  componentDidMount() {
+    this.prop.getItems();
+  }
 
   render() {
     const { items } = this.state;
